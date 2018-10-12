@@ -15,4 +15,4 @@ class soul:
         self.duration = 5
         self.cooldown = 13
         self.remaining_duration = 5
-        self.remaining_cooldown = 13
+        self.remaining_cooldown = 0
