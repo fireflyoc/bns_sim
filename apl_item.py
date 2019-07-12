@@ -10,5 +10,5 @@ class apl_item:
         self.skill = skill
         self.conditions = conditions
         
-    def can_use(self):
-        return all(self.conditions)
+    def can_use(self, skill_available):
+        return all([all(self.conditions), skill_available])

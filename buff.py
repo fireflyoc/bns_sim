@@ -28,9 +28,22 @@ class Buff:
         
         
 class Debuff:
-    def __init__(self, duration, damage, tick, name):
+    def __init__(self, duration=0, damage=0, tick=1, name=""):
         self.max_duration = duration
         self.remaining = duration
         self.damage = damage
         self.tick_interval = tick
         self.name = name
+        
+        
+        
+overflow = Buff(duration=5, name="Overflow")
+photosynthesis = Buff(duration = 5, name = "Photosynthesis")    
+magnum = Buff(duration = 10,name = "Magnum")
+magnum_final = Buff(duration = 15, name = "magnum 3 stacks")
+burr_available = Buff(duration = 30, name = "Burr Toss Available")
+bracelet = Buff(duration = 10, name = "Divinity Bracelet")
+dynasty = Buff(stacks = 3, duration = 4, name = "Dynasty Mystic Badge")
+ssf_available = Buff(duration = 5, name = "Super Sunflower Available")
+
+poison = Debuff(duration = 10, damage = 0.6, tick = 1, name = "Ivy Poison")
